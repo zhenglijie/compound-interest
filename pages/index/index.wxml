@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="box">
+  <view class="title">复利计息</view>
+  <view class="Layout">
+    <view>请输入本金:</view>
+    <input placeholder="默认10000" type="number" bindblur="getPrincipal"></input>
+  </view>
+  <view class="Layout">
+    <view>请输入利率:</view>
+    <input placeholder="默认0.03" type="number" bindblur="getRate"></input>
+  </view>
+  <button type="primary" bindtap="calc">计算五年后本息</button>  
+  <view class = "typeface" hidden="{{flag}}">五年后本息所得：{{res}}</view>
+  
+  <view class="favorite_sentence">In short, the years are long, but it is worth waiting for.</view>
+  <view class="box">
+    <view>班级：电科19-2</view>
+    <view>学号：201923010234</view>
+    <view>姓名：郑立杰</view>
+  </view>
+
+</view>
